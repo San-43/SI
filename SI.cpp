@@ -68,6 +68,7 @@ int main() {
                 cout<<"\t"<<"***   3) o C) Km -> mi               ***"<<endl;
                 cout<<"\t"<<"***   0) o Q) Volver al menú principal                ***"<<endl;
                 cout<<"\t"<<"*************************************"<<endl;
+                back = false;
 
                 switch (askOption()) {
                     case '1': case 'A':
@@ -93,7 +94,7 @@ int main() {
                 cout<<"\t"<<"***   2) o B) kg -> lb                ***"<<endl;
                 cout<<"\t"<<"***   0) o Q) Volver al menú principal                ***"<<endl;
                 cout<<"\t"<<"*************************************"<<endl;
-
+                back = false;
                 switch (askOption()) {
                     case '1': case 'A':
                         gTOoz();
