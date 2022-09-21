@@ -4,7 +4,7 @@
 
 char askOption();
 bool askForBack();
-double valor(double x, char unidad);
+double value(double x, char unidad);
 void cmTOin();
 void mTOft();
 void kmTOmi();
@@ -126,7 +126,7 @@ int main() {
     return 0;
 }
 
-double valor(double x, const string& unidad) {
+double value(double x, const string& unidad) {
     printf("Ingrese los %s: \n", unidad.c_str());
 
     do {
@@ -183,26 +183,26 @@ bool askForBack() {
 
 void cmTOin() {
     double cm;
-    cm = valor(cm, "cm");
+    cm = value(cm, "cm");
     printf("%f cm es igual aproximadamente a: %.2f in.", cm,(0.39370079 * cm));
 }
 void mTOft() {
     double m;
-    m = valor(m, "m");
+    m = value(m, "m");
     printf("%f m es igual aproximadamente a: %.2f ft.", m,(3.2808399 * m));
 }
 void kmTOmi() {
     double km;
-    km = valor(km, "km");
+    km = value(km, "km");
     printf("%f km es igual aproximadamente a: %.2f mi.", km,(0.62137119 * km));
 }
 void gTOoz() {
     double g;
-    g = valor(g, "g");
+    g = value(g, "g");
     printf("%f g es igual aproximadamente a: %.2f oz.", g,(0.03527396 * g));
 }
 void kgTOlb() {
     double kg;
-    kg = valor(kg, "kg");
+    kg = value(kg, "kg");
     printf("%f kg es igual aproximadamente a: %.2f lb.", kg,(2.20462262 * kg));
 }
